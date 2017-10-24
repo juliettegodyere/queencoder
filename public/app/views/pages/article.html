@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/articles.css">
+
+<!-- <div class='view-school'>
+	<div class='homepage-hero blog'>
+        <div class='container'>
+            <div class='row text-center'>
+            <h2 class='headline'><a href="/">{{topic}}</a></h2>
+            <h3 class='subtitle'>{{slug}}</h3>
+            </div>
+        </div>
+	</div> -->
+	<div class="blog-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9">
+                <div class="post">
+                    <h1><a href="/">{{items.data.title}}</a></h1>
+                    <div class="post-byline">
+                        <div class="post-share">
+                            <a href="https://www.facebook.com/sharer.php?u=http://node.university/blog/node-for-php-devs" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                                <i class='fa fa-facebook'></i>
+                            </a>
+                            <a href="https://twitter.com/intent/tweet/?text=Node for PHP Developers:+http://node.university/blog/node-for-php-devs" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                            <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://node.university/blog/node-for-php-devs&amp;title=Node for PHP Developers" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                            <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="post-author-name">{{items.data.publishedby}}</div>
+                        <div class="post-date">{{items.data.createdAt | date:'longDate'}}</div>
+                    </div>
+                    <div class="post-content">
+                        <p ng-bind-html="items.data.body"></p>
+                    </div>
+                </div>
+                <div class="comments attachment-block-wrapper">
+                    <div id="comments_settings" class="comments-settings hidden" data-thread-endpoint="/api/v1/comments/?commentable_type=Page&amp;commentable_id=548905&amp;threaded=true" data-i18n="{&quot;post_title&quot;:&quot;Post a comment&quot;,&quot;post_placeholder&quot;:&quot;Leave a comment...&quot;,&quot;post_success&quot;:&quot;Your comment was posted.&quot;,&quot;post_moderation&quot;:&quot;Your comment was posted, but it needs to be approved by the school owner before it shows up.&quot;,&quot;post_fail&quot;:&quot;Sorry, your comment could not be posted at this time :(&quot;,&quot;post_comment&quot;:&quot;Post Comment&quot;,&quot;save_comment&quot;:&quot;Save Comment&quot;,&quot;view_comment&quot;:&quot;View comment&quot;,&quot;reply&quot;:&quot;Reply&quot;,&quot;ago&quot;:&quot;ago&quot;,&quot;now&quot;:&quot;now&quot;,&quot;instructor&quot;:&quot;Instructor&quot;,&quot;awaiting_review&quot;:&quot;Awaiting Review&quot;,&quot;comments&quot;:&quot;comments&quot;,&quot;notifications_participating_thread&quot;:&quot;Notify me when someone comments on a discussion I&#39;ve commented in.&quot;,&quot;notifications_responses&quot;:&quot;Notify me when someone responds to my comments.&quot;,&quot;notifications_author&quot;:&quot;Notify me when someone comments in one of my courses.&quot;,&quot;has_been_removed&quot;:&quot;This comment has been removed.&quot;,&quot;add_image&quot;:&quot;Add Image&quot;,&quot;view_thread&quot;:&quot;View the rest of this thread&quot;,&quot;approve&quot;:&quot;Approve&quot;,&quot;edit&quot;:&quot;Edit&quot;,&quot;delete&quot;:&quot;Delete&quot;,&quot;permalink&quot;:&quot;Link&quot;,&quot;load_more&quot;:&quot;Load more&quot;,&quot;add_text_error&quot;:&quot;Please add text to the comment.&quot;}" data-attachments-enabled="true" data-filepicker-key="ADNupMnWyR7kCWRvm76Laz"></div>
+                        <h5 class="comments__heading">
+                            <span id="comments_total">1</span> comments
+                        </h5>
+                        <div class="comments__wrapper" id="comments_wrapper"></div>
+                        <h5 class="comments__heading">
+                            <a class="comments-pagination-link hidden" id="comments_pagination" data-next-page="0" data-loaded-comments="0" data-total-comments="1" data-comment-handler="load_more">
+                                Load more
+                            </a>
+                        </h5>
+
+                    </div>
+                </div>
+            <div class="col-sm-3">
+                <div class="sidebar-block">
+                    <h2>ABOUT</h2>
+                    <div class="content">
+                        <p>This blog will be a form of expressing my different experiences in my work place, 
+                                as well as my different experiences with technologies I will come to work with.<b> Stay tuned.</b></p>
+                        <p><br></p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- </div> -->
+ 

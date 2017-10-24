@@ -1,0 +1,15 @@
+{
+  "name": "blogApp",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular-filepicker": "^1.1.4",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-route": "latest"
+  },
+  "resolutions": {
+    "angular": "1.6.6"
+  }
+}

@@ -1,0 +1,57 @@
+
+<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/common.css">
+<!-- <div class='view-school'>
+	<div class='homepage-hero blog'>
+        <div class='container'>
+            <div class='row text-center'>
+            <h2 class='headline'><a href="/">{{topic}}</a></h2>
+            <h3 class='subtitle'>{{slug}}</h3>
+            </div>
+        </div>
+	</div> -->
+	<div class="blog-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9">
+					<div ng-if="posts.length===0"><p>No article to display</p></div>
+					<div class="post" ng-repeat="article in posts">
+                    	<h1><a href={{"/article/"+article._id}}>{{article.title}}</a></h1>
+                    	<div class="post-byline">
+                        	<div class="post-author-name">{{article.publishedby}}</div>
+                        	<div class="post-date">{{article.createdAt | date:'longDate'}}</div>
+						</div>
+						<div class="post-content" ng-bind-html="article.body | limitTo:400">
+                    	<!-- <div class="post-content">{{article.body|limitTo:400}}{{article.body.length > 100?'.....':''}} -->
+						</div>
+						<div class="post-content">
+							<p class="read-more"><a href={{"/article/"+article._id}}>READ MORE</a></p>
+						</div>
+					</div>
+					<center>
+                		<br>
+						<nav class="pagination">
+							<span class="page current">1</span>
+							<span class="page"><a rel="next" href="/blog?page=2">2</a></span>
+							<span class="next"><a rel="next" href="/blog?page=2">Next &rsaquo;</a></span>
+							<span class="last"><a href="/blog?page=2">Last &raquo;</a></span>
+						</nav>
+                    </center>
+				</div>
+				<div class="col-sm-3">
+					<div class="sidebar-block">
+						<h2>ABOUT</h2>
+						<div class="content">
+							<p>This blog will be a form of expressing my different experiences in my work place, 
+                                as well as my different experiences with technologies I will come to work with.<b> Stay tuned.</b>
+							</p>
+							<p><br></p>
+						</div>
+					</div>
+            	</div>              
+			</div>
+		</div>
+	</div>
+<!-- </div> -->
+
+	  

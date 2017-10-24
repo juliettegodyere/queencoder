@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/login.css">
+<div class='view-school'>
+    <div class="gray-layout">
+        <div class="container on-a-school-layout"></div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                    <div class="content-box">
+                        <h1 class="text-center">Log In</h1>
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <form class="new_user" id="new_user" ng-submit="main.doLogin(logindata)">
+                                   <div class="form-group">
+                                        <label class="control-label" for="user_email">Email Address</label>
+                                        <div class="control-input">
+                                            <input type="email" autofocus="autofocus" placeholder="Please enter username" id="user_email" class="form-control input-hg" ng-model="main.logindata.email"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="user_password">Password</label>
+                                        <div class="control-input">
+                                            <input autocomplete="off" type="password" placeholder="Please enter password" class="form-control input-hg" ng-model="main.logindata.password" id="user_password"/>
+                                        </div>
+                                    </div><br>
+                                    <div class="form-group text-center">
+                                        <input type="submit" name="commit" value="Log In" class="btn btn-primary btn-md login-button" />
+                                    </div><br>
+                                    <center>
+                                        <a class="link-below-button" href="/secure/67504/users/password/new">Forgot Password?</a>
+                                    </center> 
+                                </form>
+                            </div>
+                        </div>
+                        <div class="box-footer"><a href="/secure/67504/users/sign_up?flow_school_id=67504"><img src="https://www.filepicker.io/api/file/PiCEWTmmSOuDFHtfL9sV" alt="Picewtmmsoudfhtfl9sv" />Create an Account</a></div>                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="jumbptron text-center" ng-show="main.loading">
+            <span class="glyphicon glyphicon-repeat normal-right-spinner"></span>
+            <p style="color:black">Loading...</p>
+        </div>
+        <br/>
+        <div class="row, show-hide-message" ng-show="main.successMsg">
+            <div class="alert alert-success">{{main.successMsg}}</div>
+        </div>   
+        <br>
+        <div class="row, show-hide-message" ng-show="main.errorMsg" >
+            <div class="alert alert-danger">{{main.errorMsg}}</div>
+        </div>
+    </div>
+</div>    
+

@@ -1,0 +1,106 @@
+ /* .navbarStyles{
+    margin-top:15px;
+ }
+
+.mainHeader{
+    position:fixed;
+    width:100%;
+    display:block;
+    /* height:80px; */
+    
+/* } 
+.footer{
+    text-align: center;
+
+}
+.navBar{
+    background-color: transparent;
+    border-color: transparent;
+    position:absolute;
+}
+.navBar .navbarNav>li>a {
+    color: #ffffff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top:20px;
+}
+.navBar .navbarNav > li > a:hover,
+.navbarNav .navbarNav > li > a:focus {
+    color: rgb(15, 199, 122);
+}
+.navBar .navbarNav > .active > a {
+    color: #ffffff; 
+    background-color: transparent;
+    border-bottom: 1px solid rgb(15, 199, 122);  
+}
+.navBar .navbarNav > .active > a:hover,
+.navBar .navbarNav > .active > a:focus {
+    color: rgb(15, 199, 122);
+    background-color: transparent;
+    
+}
+.navBar .navbar-brand {
+    color: #ffffff;
+    margin-top:-30px;
+}
+.navBar .navbarBrand:hover,
+.navBar .navbarBrand:focus {
+    color: rgb(15, 199, 122);
+}
+.navBar .navbarRight>li>a{
+    color: #ffffff;
+    font-size: 17px;
+}
+.navBar .navbarRight > li > a:hover,
+.navbarNav .navbarRight > li > a:focus {
+    color: rgb(15, 199, 122);
+}  */
+
+.navbar-fedora.is-at-top.is-not-signed-in.is-blog {
+    background: none !important;
+    border-bottom: 0;
+}
+.navbar-fedora {
+    background-color: #121212;
+    position: absolute;
+    margin-bottom: 0px;
+    top: 0px;
+    -webkit-transition: none;
+    transition: none;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+@media (min-width: 768px)
+.navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+@media (min-width: 768px)
+.navbar {
+    border-radius: 4px;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}

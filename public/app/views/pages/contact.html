@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="assets/css/common.css">
+
+<link rel="stylesheet" href="assets/css/home.css">
+<!-- <div class='view-school'>
+	<div class='homepage-hero blog'>
+        <div class='container'>
+            <div class='row text-center'>
+            <h2 class='headline'><a href="/">{{topic}}</a></h2>
+            <h3 class='subtitle'>{{slug}}</h3>
+            </div>
+        </div>
+    </div> -->
+    <div class="blog-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="post">
+                    <div class="content-box">
+                        <h1 class="text-center">Talk to me</h1>
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <form class="new_user" id="new_user" ng-submit="contact.contactData(logData)">
+                                    <div class="form-group">
+                                        <label class="control-label" for="user_email">Name</label>
+                                        <div class="control-input">
+                                            <input type="text" autofocus="autofocus" placeholder="Please enter name" id="user_name" class="form-control input-hg" ng-model="contact.logData.name"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="user_email">Email Address</label>
+                                        <div class="control-input">
+                                            <input type="email" autofocus="autofocus" placeholder="Please enter email" id="user_email" class="form-control input-hg" ng-model="contact.logData.email"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="user_password">Message</label>
+                                        <div class="control-input">
+                                            <textarea autocomplete="on" placeholder="Please enter message" class="form-control input-hg" ng-model="contact.logData.message" id="user_message"></textarea>
+                                        </div>
+                                    </div><br>
+                                    <div class="form-group text-center">
+                                        <input type="submit" name="commit" value="Send Message" class="btn btn-primary btn-md login-button" />
+                                    </div><br>
+                                </form>
+                            </div>
+                        </div>
+                    <div class="box-footer"><a href="/secure/67504/users/sign_up?flow_school_id=67504"><img src="https://www.filepicker.io/api/file/PiCEWTmmSOuDFHtfL9sV" alt="Picewtmmsoudfhtfl9sv" />Remain Blessed</a></div>                        
+                    </div>
+                    <div class="jumbptron text-center" ng-show="contact.loading">
+                        <span class="glyphicon glyphicon-repeat normal-right-spinner"></span>
+                        <p>Loading...</p>
+                    </div>
+                    <br/>
+                    <div class="row, show-hide-message" ng-show="contact.successMsg">
+                        <div class="alert alert-success">{{contact.successMsg}}</div>
+                    </div><br>
+                    <div class="row, show-hide-message" ng-show="contact.errorMsg" >
+                        <div class="alert alert-danger">{{contact.errorMsg}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="sidebar-block">
+                    <h2>ABOUT</h2>
+                    <div class="content">
+                        <p>This blog will be a form of expressing my different experiences in my work place, 
+                                as well as my different experiences with technologies I will come to work with.<b> Stay tuned.</b></p>
+                        <p><br></p>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </div>    
+<!-- </div> -->
+
+	  

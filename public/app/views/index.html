@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <body data-gr-c-s-loaded="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Personal Site</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="stylesheet" href="css/common.css"> 
+    <link rel="stylesheet" href="assets/css/index.css"> 
+    
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="libs/animate.css/animate.css">
+	<!-- JS -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-sanitize/angular-sanitize.js"></script>
+    <!-- <script src="libs/angular-sanitize/angular-sanitize.js"></script>     -->
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script src="libs/filepicker-js/filepicker.js"></script>
+    <script src="libs/angular-filepicker/dist/angular_filepicker.js"></script>
+    <script src="libs/jquery/dist/jquery.js"></script> 
+	<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src=""></script>
+    <!-- include summernote css/js-->
+    <link href="libs/summernote/dist/summernote.css" rel="stylesheet">
+    <script src="libs/summernote/dist/summernote.js"></script>
+    
+
+    <script src="app/routes.js"></script>
+    <script src="app/app.js"></script>
+
+    <script src="app/services/userServices.js"></script>
+    <script src="app/services/authServices.js"></script>
+     <script src="app/services/blogServices.js"></script> 
+
+    <script src="app/controllers/userCtrl.js"></script>
+    <script src="app/controllers/MainCtrl.js"></script>
+    <script src="app/controllers/adminCtrl.js"></script>
+    <script src="app/controllers/blogdetailsCtrl.js"></script>
+    <script src="app/controllers/articleCtrl.js"></script>
+    <script src="app/controllers/contactCtrl.js"></script>
+
+<body ng-app="userApp" ng-controller="MainCtrl as main" ng-show="main.loadme" ng-cloak>
+    <header>
+    <div class="navbar navbar-fedora navbar-fixed-top is-at-top bs-docs-nav is-not-signed-in is-blog" id='navbar' role='navigation'>
+        <div class="container">
+            <div class="navbar-header">
+                <button class='navbar-toggle' data-target='.navbar-header-collapse' data-toggle='collapse' type='button'>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class='navbar-brand header-logo' href='/'>
+                    <span class="sr-only">Node University: Courses on Node.js, React and JavaScript</span>
+                    <img src="assets/img/queencoder.png" height="200" width="200"/>
+                </a>                    <!-- <a class="navbar-brand navbarBrand" href="#"><img src="assets/img/logo.png" alt="Smiley face" height="130" width="130"></a> -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class='collapse navbar-collapse navbar-header-collapse'>                    
+                    <ul class="nav navbar-nav navbar-right navbarNav">
+                        <li><a class='fedora-navbar-link navbar-link' href="/" target=''>Article</a></li>
+                        <li><a class='fedora-navbar-link navbar-link' href='/about' target=''>About</a></li> 
+                        <li><a class='fedora-navbar-link navbar-link' href='/contact' target=''>Contact</a></li>                          
+                        <!-- <li><a class='fedora-navbar-link navbar-link' href="/login" ng-show ="!main.isLoggedIn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>                         -->
+                        <!-- <li><a href="/contact">Contact Me</a></li>
+                        <li><a href="about">About Me</a></li> -->
+                    </ul>
+                    <!-- <ul class="nav navbar-nav navbar-right navbarRight" >
+                            <li><a  href="/register" ng-show ="!main.isLoggedIn"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+                            <li><a href="/login" ng-show ="!main.isLoggedIn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><a href="/profile" ng-show ="main.isLoggedIn">{{main.username}}</a></li>
+                            <li><a href="#" ng-click="main.logout()" ng-show ="main.isLoggedIn">Logout</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </header> 
+    <div class='view-school'>
+        <div class='homepage-hero blog'>
+            <div class='container'>
+                <div class='row text-center'>
+                <h2 class='headline'><a href="/">Juliette Nkwor : my Code, my Design, my Way!</a></h2>
+                <h3 class='subtitle'> Doing the actual coding.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div ng-view></div>
+    </div>
+    <footer class='bottom-menu bottom-menu-inverse'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xs-12 col-sm-12 col-md-12 footer-column'>   
+                    <p>2017 &copy; Juliet Nkwor's official Blog: Doing the actual coding.</p>
+                </div>
+                <!-- <div class='col-xs-12 col-sm-4 col-md-4 footer-column'>
+                    <ul class='list-unstyled'>
+                        <li><a href="/p/terms">Terms of Use</a></li>
+                        <li><a href="/p/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div> -->
+                <!-- <div class='col-xs-12 col-sm-6 col-md-6 footer-column'>
+                    <ul class='list-unstyled'> 
+                        <li><a href='/about' target=''>About</a></li> 
+                        <li><a href='/' target=''>Blog</a></li>
+                        <li><a href='/contact' target='_blank'>Contact</a></li>            
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

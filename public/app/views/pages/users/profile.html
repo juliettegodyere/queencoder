@@ -1,0 +1,20 @@
+<div  class="page-header">
+	<a ng-show ="main.isLoggedIn" href="/admin">Admin</a>
+	<h1> {{main.username}}'s profile</h1>
+</div>
+
+<div class="panel panel-info">
+	<div class="panel-heading" style="text-align:center;"><strong>User Profile</strong></div>
+	<table class="table">
+	<tr>
+		<td>Username</td>
+		<td>Email Address</td>
+		<td>Passsword</td>
+	</tr>
+	<tr>
+		<td>{{main.username}}</td>
+		<td>{{main.userEmail}}</td>
+		<td>******************</td>
+	</tr>
+</table>
+</div>
