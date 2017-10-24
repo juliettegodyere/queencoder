@@ -22,6 +22,7 @@ app.use('/users', users);
 app.use('/emailLink', emailLink); 
  
 mongoose.connect(process.env.MONGOLAB_URI, function(err){
+//mongoose.connect(config.url, function(err){
 	if(err){
 		console.log("Not connected to MongoDB");
 	}else{
