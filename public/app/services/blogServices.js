@@ -1,5 +1,5 @@
 // public/js/services/BlogService.js
-angular.module('BlogService', []).factory('Blog',['$q', '$timeout', '$http',function($q, $timeout, $http) {
+var app = angular.module('BlogService', []).factory('Blog',['$q', '$timeout', '$http, $qProvider',function($q, $timeout, $http, $qProvider) {
 
 	return {
         headers :{
@@ -48,5 +48,8 @@ angular.module('BlogService', []).factory('Blog',['$q', '$timeout', '$http',func
         // }
     }
 
-}])
+}]);
+app.config(['$qProvider', function ($qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
+}]);
 
