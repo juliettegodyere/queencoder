@@ -46,7 +46,14 @@ app.get('*', function(req, res, next) {
 	  return next();
 	}   
 	res.send(err.message || '** no unicorns here **');
-  });
+	});
+	
+app.all('*', function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+});
 
 app.listen(port, function(){
   console.log('Magic happens on port ' + port);
