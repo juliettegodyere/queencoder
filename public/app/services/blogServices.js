@@ -1,5 +1,5 @@
 // public/js/services/BlogService.js
-var app = angular.module('BlogService', []).factory('Blog',['$q', '$timeout', '$http, $qProvider',function($q, $timeout, $http, $qProvider) {
+var app = angular.module('BlogService', []).factory('Blog',['$q', '$timeout', '$http', function($q, $timeout, $http) {
 
 	return {
         headers :{
